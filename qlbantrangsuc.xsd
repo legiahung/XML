@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="QLBANTS">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="SANPHAM" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="MATS">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="5"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="NCC" type="xs:string"/>
+                            <xs:element name="LOAITS" type="xs:string"/>
+                            <xs:element name="TENTS" type="xs:string"/>
+                            <xs:element name="ANH" type="xs:string"/>
+                            <xs:element name="BAOHANH" type="xs:string"/>
+                            <xs:element name="MOTA" type="xs:string"/>
+                            <xs:element name="TINHTRANG">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="Còn hàng"/>
+                                        <xs:enumeration value="Hết hàng"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="GIA" type="xs:float"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="KHACHANG" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="MAKH">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="5"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="TENKH" type="xs:string"/>
+                            <xs:element name="SDT" type="xs:int"/>
+                            <xs:element name="DIACHI" type="xs:string"/>
+                            <xs:element name="EMAIL" type="xs:string"/>
+                            <xs:element name="GIOITINH">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:int">
+                                        <xs:enumeration value="0"/>
+                                        <xs:enumeration value="1"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="TENDN" type="xs:string"/>
+                            <xs:element name="MATKHAU" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="NHANVIEN" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="MANV">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="5"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="TEN" type="xs:string"/>
+                            <xs:element name="GIOITINH">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:int">
+                                        <xs:enumeration value="0"/>
+                                        <xs:enumeration value="1"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="SDT" type="xs:int"/>
+                            <xs:element name="NGAYSINH ">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="\d{2}[/]\d{2}[/]\d{4}"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="TENDN" type="xs:string"/>
+                            <xs:element name="MATKHAU" type="xs:string"/>
+                            <xs:element name="QUYEN">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="Chỉnh sửa"/>
+                                        <xs:enumeration value="Xem"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="DATHANG" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="MADH">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="5"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="MANV">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="5"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="MAKH">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="5"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="PTTT" type="xs:string"/>
+                            <xs:element name="NGAYDAT">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="\d{2}[/]\d{2}[/]\d{4}"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="NGAYGIAO">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="\d{2}[/]\d{2}[/]\d{4}"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="SDTNGUOINHAN" type="xs:int"/>
+                            <xs:element name="DIACHI" type="xs:string"/>
+                            <xs:element name="TINHTRANG">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="Đang giao"/>
+                                        <xs:enumeration value="Hoàn thành"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="CTDH" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="MADH">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="5"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="MATS">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:length value="5"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="SOLUONG" type="xs:unsignedInt"/>
+                            <xs:element name="GIA" type="xs:float"/>
+                            <xs:element name="TONGTIEN" type="xs:float"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+        <xs:key name="KEYSP">
+            <xs:selector xpath="SANPHAM"/>
+            <xs:field xpath="MATS"/>
+        </xs:key>
+        <xs:key name="KEYKH">
+            <xs:selector xpath="KHACHANG"/>
+            <xs:field xpath="MAKH"/>
+        </xs:key>
+        <xs:key name="KEYNV">
+            <xs:selector xpath="NHANVIEN"/>
+            <xs:field xpath="MANV"/>
+        </xs:key>
+        <xs:key name="KEYNCC">
+            <xs:selector xpath="NCC"/>
+            <xs:field xpath="MANCC"/>
+        </xs:key>
+        <xs:key name="KEYLOAI">
+            <xs:selector xpath="LOAITS"/>
+            <xs:field xpath="MALOAI"/>
+        </xs:key>
+        <xs:key name="KEYDATHANG">
+            <xs:selector xpath="DATHANG"/>
+            <xs:field xpath="MADH"/>
+        </xs:key>
+        <xs:keyref name="KEYCTDH" refer="KEYSP">
+            <xs:selector xpath="CTDH"/>
+            <xs:field xpath="MATS"/>
+        </xs:keyref>
+        <xs:keyref name="CTDHKEY" refer="KEYDATHANG">
+            <xs:selector xpath="CTDH"/>
+            <xs:field xpath="MADH"/>
+        </xs:keyref>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,177 @@
+CREATE DATABASE Quanlybantrangsuc
+GO
+USE Quanlybantrangsuc
+GO
+
+
+CREATE TABLE KhachHang(
+	MaKH VARCHAR(5) PRIMARY KEY,
+	TenKH NVARCHAR(50),
+	SDT VARCHAR(11),
+	DiaChi NVARCHAR(100),
+	Email VARCHAR(50),
+	GioiTinh BIT,
+	TenDN VARCHAR(40),
+	MatKhau VARCHAR(40)
+);
+GO
+CREATE TABLE SanPham(
+	MaTS VARCHAR(5) PRIMARY KEY,
+	NCC NVARCHAR(50) ,
+	LoaiTS NVARCHAR(200),
+	TenTS NVARCHAR(200),
+	Anh VARCHAR(700),
+	BaoHanh INT,
+	MoTa NVARCHAR(1000),
+	TinhTrang NVARCHAR(20),
+	Gia FLOAT
+);
+
+GO
+CREATE TABLE NhanVien(
+	MaNV VARCHAR(5) PRIMARY KEY,
+	Ten NVARCHAR(30),
+	GioiTinh BIT,
+	SDT VARCHAR(11),
+	NgaySinh DATE,
+	TenDN VARCHAR(30),
+	MatKhau VARCHAR(30),
+	Quyen BIT /*cho kiểu bit, Quy ước 1: Chỉnh sửa, 0:Xem*/
+);
+GO
+CREATE TABLE DatHang(
+	MaDH VARCHAR(5) PRIMARY KEY,
+	MaNV  VARCHAR(5) FOREIGN KEY(MaNV) REFERENCES dbo.NHANVIEN(MaNV),
+	MaKH VARCHAR(5) REFERENCES dbo.KhachHang(MaKH),
+	PTTT BIT,/*cho kiểu bit, Quy ước 1: online, 0:trực tiếp*/
+	NgayDat DATE,
+	NgayGiao DATE,
+	SDTNguoiNhan VARCHAR(11),
+	DiaChi NVARCHAR(100),
+	TinhTrang NVARCHAR(10)
+);
+GO
+
+CREATE TABLE CTDH(
+	MaDH VARCHAR(5) REFERENCES dbo.DatHang(MaDH),
+	MaTS VARCHAR(5) REFERENCES dbo.SanPham(MaTS),
+	SL INT,
+	Gia FLOAT,
+	TongTien FLOAT
+	PRIMARY KEY(MaDH, MaTS)
+);
+GO
+INSERT INTO dbo.KhachHang
+(  MaKH, TenKH, SDT, DiaChi, Email, GioiTinh,TenDN,MatKhau)
+VALUES
+('KH001',N'Nguyễn Thị Mai Anh','0868997369',N' Quảng Ninh','anh@gmail.com',1,'maianh','anh123'),				
+('KH002',N'Lê Gia Hưng','0708126244',N'Nha Trang, Khánh Hòa','hung@gmail.com',0,'hungle','hung123'),				
+('KH003',N'Lê Ngọc Tân','0345145813',N'Nha Trang, Khánh Hòa','tan@gmail.com',0,'tan','tan123'),					
+('KH004',N'Trần Đức Trọng','0386941762',N' Nha Trang, Khánh Hòa','trong@gmail.com',0,'trong','trong123'),				
+('KH005',N'Phan Trần Thu Phương','0792564987',N'Phú Yên','phuong@gmail.com',1,'phuong','phuong123'),				
+('KH006',N'Nguyễn Thành Đạt','0396852741',N'Phú Yên','dat@gmail.com',0,'dat','dat123'),				
+('KH007',N'Vũ Hoài Thu','0357951852',N'Nha Trang, Khánh Hòa','thu@gmail.com',1,'thu','thu123'),				
+('KH008',N'Dương Thị Thanh Trúc','0741852963',N'Nha Trang, Khánh Hòa','truc@gmail.com',1,'truc','truc123'),					
+('KH009',N'Phạm Hoàng Long','0321965874',N'Nha Trang, Khánh Hòa','long@gmail.com',0,'long','long123'),
+('KH010',N'Đỗ Tuấn Kiệt','0336952841',N'Nha Trang, Khánh Hòa','kiet@gmail.com',0,'kiet','kiet123'),
+('KH011',N'Nguyễn Thị Thanh Lam','0385761943',N'Hà Tĩnh','lam@gmail.com',1,'lam','lam123'),
+('KH012',N'Nguyễn Kha','0795632814',N'Hậu Giang','kha@gmail.com',0,'kha','kha123'),
+('KH013',N'Hồ Minh Phúc','0769832541',N'Nha Trang, Khánh Hòa','phucho@gmail.com',0,'phuc','phuc123'),
+('KH014',N'Trương Nguyễn Gia Hưng','0741963852',N'Nha Trang, Khánh Hòa','hunggia@gmail.com',0,'hunggia','hunggia123'),
+('KH015',N'Phạm Thị Trang','039957688',N' Quảng Ninh, Khánh Hòa','trang@gmail.com',1,'trang','trang123'),
+('KH016',N'Phạm Ngọc Liên','0769332148',N'Quảng Ninh, Khánh Hòa','lien@gmail.com',1,'lien','lien123'),
+('KH017',N'Đặng Trúc Ly','0369995624',N'Phú Yên','ly@gmail.com',1,'ly','ly123'),
+('KH018',N'Diệp Tú Nam Vương','0766598324',N'Quảng Ninh, Khánh Hòa','vuong@gmail.com',0,'vuong','vuong123'),
+('KH019',N'Tiền Hữu Như Ý','	0359830611',N' Quảng Trị','ytien@gmail.com',1,'ytien','ytien123'),
+('KH020',N'Nguyễn Hoài Duy','0769841352',N'Nha Trang, Khánh Hòa','duy@gmail.com',0,'duy','duy123')
+
+
+INSERT INTO dbo.SanPham
+( MaTS, NCC, LoaiTS, TenTS, Anh, BaoHanh, MoTa, TinhTrang,  Gia)
+VALUES
+('N0001',N'Công Ty TNHH Long Ly',N'Nhẫn',N'Nhẫn bạc hình vô cực','sp1.jpg',1, N'Đắm chìm trong sự độc đáo của BDHC về biểu tượng của sự vô hạn. 
+Nút thắt mang tính biểu tượng ở phần trung tâm được đặt bất đối xứng, biểu thị sức mạnh của sự kết nối. Cặp nhẫn bạc vô cực làm từ bạc sterling này 
+là đại diện hoàn hảo cho sự liên kết không thể phá vỡ và cũng là điểm nhấn bổ sung cho bộ sưu tập trang sức của bạn. Khi sự vô hạn là không đủ, 
+hãy thử kết hợp cùng với những chiếc khuyên tai được lấy cảm hứng từ sự vô hạn khác để hãnh diện tạo nên tuyên ngôn của bạn', N'Còn hàng',  19.000), 
+
+('DC0001',N'Công Ty TNHH Trang Sức Việt Nam - Simmy',N'Dây chuyền',N'Dây chuyền ngọc trai','sp2.jpg',2, N'Những viên trai mang sự liên tưởng đến sợi dây chuyền ngọc trai, mạ vàng 14K, mang tính biểu tượng và biến nó thành một thiết kế với tiềm năng cá nhân hóa vô tận. 
+Nó có thể được phối rất nhiều kiểu,hai đầu có thể mở - được thiết kế với các đường rãnh - năm liên kết giữa mỗi đầu nối và một đầu khóa đóng mở carabiner nhỏ. 
+Một nửa của dây là chuỗi đôi, tăng thêm khía cạnh cá nhân hóa cho dây. Bạn có thể giữ nguyên độ dài ban đầu, 
+kéo dài hơn hoặc cũng có biến nó thành một vòng cổ, tất cả bằng cách thêm vào hoặc lấy mắt xích ra sao cho phù hợp. 
+Khi bạn đã điều chỉnh vừa vặn, hãy phối lại nó với các charm biểu tượng BDHC đầy ý nghĩa, từ đó kể ra câu chuyện của mình', N'Hết hàng',   110.000),
+
+('VT0001',N'Công Ty TNHH Công Nghệ D.C',N'Vòng tay',N'Vòng tay bạc dạng chuỗi','sp3.jpg',1, N'Làm mới phong cách của bạn với Vòng tay "Sparkling Halo". 
+Được hoàn thiện thủ công bằng hợp kim bạc. Tác phẩm lung linh này được tạo nên từ những viên đá lấp lánh. 
+Một viên đá lớn được bao quanh bởi vô số viên đá cubic zirconia trong suốt nhiều kích thước tạo nên 1 vầng hào quang ngay vị trí trung tâm. 
+Với chốt khóa hình móc câu thuận tiện khi sử dụng và rât an toàn, sự có mặt của viên đá nhỏ lấp lánh ở cuối vòng tạo sự sinh động. 
+Hãy tạo nên phong các riêng của bạn với BDHC Timeless, sự lung linh cổ điển mà nổi bật.', N'Còn hàng', 300.000),
+
+('HT0001',N'Công Ty TNHH Trang Sức Việt Nam - Simmy',N'Hoa Tai',N'Hoa tai bạc hình hoa bướm','sp4.jpg',1, N'Được hoàn thiện thủ công bằng bạc sterling, mỗi đóa hoa Pansy có hai cánh được phủ đầy 
+đá pavé lấp lánh và ba cánh được sơn tay bằng men màu trắng và xanh đậm, tạo nên mỗi bông hoa hoàn toàn độc đáo. 
+Là loài hoa mới nhất xuất hiện trong vườn xuân của chúng tôi, hoa Pansy tượng trưng cho tình yêu trong nhiều hình thức khác nhau. 
+Hãy đeo chúng như một lời nhắc nhở về tất cả những người yêu thương trong cuộc đời của bạn và phối chúng với các sản phẩm hoa Pansy khác 
+trong bộ sưu tập của chúng tôi để tạo ra một phong cách hài hòa.', N'Hết hàng',  250.500),
+
+('N0002',N'Công Ty TNHH Công Nghệ D.C',N'Nhẫn',N'Nhẫn kim cương vàng','sp5.jpg',1.5, N'Kim cương vốn là món trang sức mang đến niềm kiêu hãnh và cảm hứng thời trang bất tận. 
+Sở hữu riêng cho mình món trang sức kim cương chính là điều mà ai cũng mong muốn. Chiếc nhẫn được chế tác từ vàng 14K cùng điểm nhấn kim cương với 
+57 giác cắt chuẩn xác, tạo nên món trang sức đầy sự sang trọng và đẳng cấp.Kim cương đã đẹp, trang sức kim cương lại càng mang sức hấp dẫn khó cưỡng. 
+Sự kết hợp mới mẻ này chắc chắn sẽ tạo nên dấu ấn thời trang hiện đại và giúp quý cô trở nên nổi bật, tự tin và thu hút sự ngưỡng mộ của mọi người.', N'Còn hàng', 779.690),
+
+('DC002',N'Công Ty TNHH Long Ly',N'Dây chuyền',N'Dây chuyền bạc mạ vàng 14K mặt tròn đính đá Cubic Zirconia','sp6.jpg',1.5, N'Nét cổ điển kết hợp hiện đại trong chiếc Vòng cổ Collier với 
+thiết kế mặt dây chuyền Halo lấp lánh mạ vàng 14k. Với thiết kế lệch tâm độc đáo cùng chất liệu mà vàng truyền thống càng làm tăng lên sự độc nhất trong mẫu thiết kế 
+đặc sắc này. Chiều dài dây chuyền có thể điều chỉnh được, khiến đây là một điểm nhấn linh hoạt cho trang phục của bạn.', N'Còn hàng', 323.000),
+
+('N0003',N'Công Ty TNHH Trang Sức Việt Nam - Simmy',N'Nhẫn',N'Nhẫn bạc Pandora Moments mặt trái tim đính đá hồng pha đỏ','sp7.jpg',1, N'Những món trang sức của chúng tôi được lấy cảm hứng từ những biểu tượng 
+mà bạn yêu. Bạn có thể đeo chiếc nhẫn để tạo nên vẻ ngoài đặc trưng của riêng bạn hoặc mang cùng với ai đó đặc biệt và mang đến một chút ý nghĩa cho phong cách solitaire 
+thanh lịch. Chiếc nhẫn sở hữu một viên đá Cubic Zirconia màu đỏ hình trái tim đặt trên nền bạc 925, được bao bọc bởi những viên đá nhỏ hơn. Trên thân nhẫn được chạm khắc thông điệp 
+"You & Me".', N'Còn hàng', 56.700),
+
+('N0004',N'Công Ty TNHH Trang Sức Việt Nam - Simmy',N'Nhẫn',N'Nhẫn Pandora Moments hình hoa tuyết đính đá trắng','sp8.jpg',3, N'Chiếc nhẫn Sparkling Herbarium Cluster gồm ba viên đá tạo hình cánh hoa 
+làm tâm điểm, hai viên hình bầu dục và một viên hình quả lê. Được chế tác từ bạc, chiếc nhẫn thanh lịch này lấy cảm hứng từ vẻ đẹp của thiên nhiên, với tạo hình 
+không bao giờ lỗi mốt. Có thể phối thành cặp đối xứng nhau để hoàn thiện bộ nhẫn đầy phong cách.', N'Còn hàng', 24.000),
+
+('HT002',N'Công Ty TNHH Long Ly',N'Hoa tai',N' Hoa tai Pandora Moments phủ vàng hồng 14k hình hoa đính đá','sp9.jpg',1, N'Mang vẻ đẹp của thiên nhiên bên trong bộ trang sức của bạn với bông tai nụ Herbarium Cluster.
+Sợi dây chuyển mạ vàng hồng 14K này có một cụm đá hình quả lê xen kẽ với đá hình marquise, và tâm điểm là một viên tròn, tạo hình lấy cảm hứng từ cánh hoa và lá. Một thiết kế mang hơi hướng thanh lịch từ dạng hình học mà
+chúng ta có thể tìm thấy bất cứ đâu trong tự nhiên, sợi dây chuyền này là sự lựa chọn hoàn hảo cho phòng cách tinh tế, nổi bật hơn của bạn.', N'Còn hàng', 49.000,),
+
+('DC003',N'Công Ty TNHH Long Ly',N'Dây chuyền',N'Dây chuyền Pandora Moments Phủ vàng hồng 14k đính đá Cz trắng','sp10.jpg',2, N'Mang vẻ đẹp của thiên nhiên bên trong bộ trang sức của bạn 
+với sợi dây chuyền Collier Cluster Cluster Sparkling.Thiết kế bao gồm những viên đá ko đồng đều một cách duyên dáng: một cụm đá hình quả lê xen kẽ với đá hình 
+marquise, và tâm điểm là một viên đá CZ tròn, tạo hình lấy cảm hứng từ cánh hoa và lá. Một thiết kế mang hơi hướng thanh lịch từ dạng hình học mà chúng ta có thể 
+tìm thấy bất cứ đâu trong tự nhiên, sợi dây chuyền này là sự lựa chọn hoàn hảo cho phòng cách tinh tế, nổi bật hơn của bạn.', N'Còn hàng', 70.000)
+	
+INSERT INTO dbo.NhanVien
+( MaNV, Ten, GioiTinh, SDT, NgaySinh, TenDN,  MatKhau,   Quyen)
+VALUES
+('NV001',N'Đoàn Như Phục',0, '0347856458','10-04-2002','phucdoan','phuc1234', 1 ),
+('NV002',N'Đinh Lê Nhật Tiến',0,'035846983','01-01-2002','nhattien','tien123', 0 ),						
+('NV003',N'Bành Thị Bưởi',1, '0368789562','02-02-2002','buoixinh','buoi123', 1),							
+('NV004',N'Nguyễn Thùy Tiên',1, '035846983','09-10-2001','tiennguyen','tien12344', 0 ),							
+('NV005',N'Đoàn Ngọc Lưu',1, '0694382579','12-22-2001','luudoan','luu112233', 0 ),						
+('NV006',N'Lê Anh Tuấn',0, '0368789562','11-15-2001','tuancui','tuan112233', 0 ),								
+('NV007',N'Lung Thị Linh',0, '0394685217','10-29-2002','linhgiao','linhvan', 0 )
+
+INSERT INTO dbo.DatHang
+( MaDH,  MaNVDuyet,  MaKH, PTTT,  NgayDat, NgayGiao, SDTNguoiNhan, DiaChi,TinhTrang)
+VALUES
+('DH001','NV003','KH001',1,'05/04/2023','05/10/2022','0324875963',N'Trần Phú, Nha Trang, Khánh Hoà',N'đang giao'),
+('DH002','NV001','KH002',0,'05/08/2023','05/15/2022','0324478963',N'Âu Cơ, Nha Trang, Khánh Hoà',N'đang giao'),
+('DH003','NV005','KH001',1,'05/08/2023','05/22/2023','0324875963',N'Hùng Vương, Tuy Hòa,Phú Yên',N'đang giao'),
+('DH004','NV007','KH007',1,'03/12/2023','03/15/2023','03748475963',N'TP. Hạ Long, Quảng Ninh',N'chưa giao'),
+('DH005','NV004','KH003',1,'04/06/2023','04/16/2023','0324456963',N'Hương Khê, Hà Tĩnh',N'đang giao'),
+('DH006','NV002','KH001',0,'03/06/2023','03/10/2023','0344878963',N'Nha Trang, Khánh Hòa',N'chưa giao'),
+('DH007','NV003','KH002',1,'02/06/2023','02/11/2023','0345875963',N'La Hai, Đồng Xuân,Phú Yên',N'đã giao')
+
+INSERT INTO dbo.CTDH( MaDH, MaTS, SL, Gia,TongTien)
+VALUES
+(   'DH001','N002',1, 779.690,779.690),
+(   'DH002','VT001',3,300.000,900.000),
+(   'DH003','DC002',2, 323.000,646.000),
+(   'DH004','HT002',2,49.000,96.000),
+(   'DH005','DC001',1,110.000,110.000)
+
+
+SELECT *FROM dbo.DatHang
+SELECT *FROM dbo.NhanVien
+SELECT * FROM dbo.SanPham
+SELECT*FROM dbo.KhachHang
+SELECT * FROM dbo.CTDH

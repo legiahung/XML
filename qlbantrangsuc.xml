@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="qlbantrangsuc.css"?>
+<?xml-stylesheet type="text/xsl" href="qlbantrangsuc.xsl"?>
+<QLBANTS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="qlbantrangsuc.xsd">
+    <SANPHAM>
+        <MATS>N0001</MATS>
+        <NCC>Công Ty TNHH Long Ly</NCC>
+        <LOAITS>Nhẫn</LOAITS>
+        <TENTS> Nhẫn bạc hình vô cực</TENTS>
+        <ANH>https://cdn.pnj.io/images/detailed/46/snxmxmk000139-nhan-bac-dinh-da-pnjsilver-hinh-vo-cuc-01.png</ANH>
+        <BAOHANH>1</BAOHANH>
+        <MOTA>Đắm chìm trong sự độc đáo của BDHC về biểu tượng của sự vô hạn. Nút thắt mang tính biểu tượng ở phần trung tâm được đặt bất đối xứng, biểu thị sức mạnh của sự kết nối. Cặp nhẫn bạc vô cực làm từ bạc sterling này là đại diện hoàn hảo cho sự liên kết không thể phá vỡ và cũng là điểm nhấn bổ sung cho bộ sưu tập trang sức của bạn. Khi sự vô hạn là không đủ, hãy thử kết hợp cùng với những chiếc khuyên tai được lấy cảm hứng từ sự vô hạn khác để hãnh diện tạo nên tuyên ngôn của bạn</MOTA>
+        <TINHTRANG>Còn hàng</TINHTRANG>
+        <GIA>19.000</GIA>
+    </SANPHAM>
+    <SANPHAM>
+        <MATS>DC001</MATS>
+        <NCC>Công Ty TNHH Trang Sức Việt Nam - Simmy</NCC>
+        <LOAITS>Dây chuyền</LOAITS>
+        <TENTS>Dây chuyền ngọc trai</TENTS>
+        <ANH>https://product.hstatic.net/200000103143/product/pngtrpnt_362302c01_rgb_7aeca4c743a7415d82751eb6cdf47243_master.png</ANH>
+        <BAOHANH>2</BAOHANH>
+        <MOTA>Những viên trai mang sự liên tưởng đến sợi dây chuyền ngọc trai, mạ vàng 14K, mang tính biểu tượng và biến nó thành một thiết kế với tiềm năng cá nhân hóa vô tận. Nó có thể được phối rất nhiều kiểu,hai đầu có thể mở - được thiết kế với các đường rãnh - năm liên kết giữa mỗi đầu nối và một đầu khóa đóng mở carabiner nhỏ. Một nửa của dây là chuỗi đôi, tăng thêm khía cạnh cá nhân hóa cho dây. Bạn có thể giữ nguyên độ dài ban đầu, kéo dài hơn hoặc cũng có biến nó thành một vòng cổ, tất cả bằng cách thêm vào hoặc lấy mắt xích ra sao cho phù hợp. Khi bạn đã điều chỉnh vừa vặn, hãy phối lại nó với các charm biểu tượng BDHC đầy ý nghĩa, từ đó kể ra câu chuyện của mình.</MOTA>
+        <TINHTRANG>Hết hàng</TINHTRANG>
+        <GIA>110.000</GIA>
+    </SANPHAM>
+    <SANPHAM>
+        <MATS>VT001</MATS>
+        <NCC>Công Ty TNHH Công Nghệ D.C</NCC>
+        <LOAITS>Vòng tay</LOAITS>
+        <TENTS>Vòng tay bạc dạng chuỗi</TENTS>
+        <ANH>https://product.hstatic.net/200000103143/product/upload_0bae5d167c3041678807ad68ae01613f_59549522827d4ed4a7a1f7b38e12b532_master.jpg</ANH>
+        <BAOHANH>1</BAOHANH>
+        <MOTA>Làm mới phong cách của bạn với Vòng tay "Sparkling Halo". 
+            Được hoàn thiện thủ công bằng hợp kim bạc. Tác phẩm lung linh này được tạo nên từ những viên đá lấp lánh. 
+            Một viên đá lớn được bao quanh bởi vô số viên đá cubic zirconia trong suốt nhiều kích thước tạo nên 1 vầng hào quang ngay vị trí trung tâm. 
+            Với chốt khóa hình móc câu thuận tiện khi sử dụng và rât an toàn, sự có mặt của viên đá nhỏ lấp lánh ở cuối vòng tạo sự sinh động. 
+            Hãy tạo nên phong các riêng của bạn với BDHC Timeless, sự lung linh cổ điển mà nổi bật.</MOTA>
+        <TINHTRANG>Còn hàng</TINHTRANG>
+        <GIA> 300.000</GIA>
+    </SANPHAM>
+    <SANPHAM>
+        <MATS>HT001</MATS>
+        <NCC>Công Ty TNHH Trang Sức Việt Nam - Simmy</NCC>
+        <LOAITS>Hoa tai</LOAITS>
+        <TENTS>Hoa tai bạc hình hoa bướm đính đá</TENTS>
+        <ANH>https://product.hstatic.net/200000103143/product/upload_f8d945fc59d8401ead55a66ec3e5442d_master.jpg</ANH>
+        <BAOHANH>1</BAOHANH>
+        <MOTA>Được hoàn thiện thủ công bằng bạc sterling, mỗi đóa hoa Pansy có hai cánh được phủ đầy đá pavé lấp lánh và ba cánh được sơn tay bằng men màu trắng và xanh đậm, 
+            tạo nên mỗi bông hoa hoàn toàn độc đáo. Là loài hoa mới nhất xuất hiện trong vườn xuân của chúng tôi, 
+            hoa Pansy tượng trưng cho tình yêu trong nhiều hình thức khác nhau. 
+            Hãy đeo chúng như một lời nhắc nhở về tất cả những người yêu thương trong cuộc đời của bạn và phối chúng với các sản phẩm hoa Pansy khác trong bộ sưu tập của chúng tôi để tạo ra một phong cách hài hòa.</MOTA>
+        <TINHTRANG>Hết hàng</TINHTRANG>
+        <GIA> 250.500</GIA>
+    </SANPHAM>
+    <SANPHAM>
+        <MATS>N0002</MATS>
+        <NCC>Công Ty TNHH Công Nghệ D.C</NCC>
+        <LOAITS>Nhẫn</LOAITS>
+        <TENTS>Nhẫn kim cương vàng</TENTS>
+        <ANH>https://cdn.pnj.io/images/thumbnails/485/485/detailed/144/gnddddc001258-nhan-kim-cuong-vang-14k-pnj-1.png</ANH>
+        <BAOHANH>1</BAOHANH>
+        <MOTA>Kim cương vốn là món trang sức mang đến niềm kiêu hãnh và cảm hứng thời trang bất tận. 
+            Sở hữu riêng cho mình món trang sức kim cương chính là điều mà ai cũng mong muốn. 
+            Chiếc nhẫn được chế tác từ vàng 14K cùng điểm nhấn kim cương với 57 giác cắt chuẩn xác, tạo nên món trang sức đầy sự sang trọng và đẳng cấp.
+            Kim cương đã đẹp, trang sức kim cương lại càng mang sức hấp dẫn khó cưỡng. Sự kết hợp mới mẻ này chắc chắn sẽ tạo nên dấu ấn thời trang hiện đại và giúp quý cô trở nên nổi bật, tự tin và thu hút sự ngưỡng mộ của mọi người.</MOTA>
+        <TINHTRANG>Còn hàng</TINHTRANG>
+        <GIA> 779.690</GIA>
+    </SANPHAM>
+    <KHACHANG>
+        <MAKH>KH001</MAKH>
+        <TENKH>Nguyễn Thị Mai Anh</TENKH>
+        <SDT>0868997369</SDT>
+        <DIACHI>Quảng Ninh</DIACHI>
+        <EMAIL>anh@gmail.com</EMAIL>
+        <GIOITINH>1</GIOITINH>
+        <TENDN>maianh</TENDN>
+        <MATKHAU>anh123</MATKHAU>
+    </KHACHANG>
+    <KHACHANG>
+        <MAKH>KH002</MAKH>
+        <TENKH>Lê Gia Hưng</TENKH>
+        <SDT>0708126244</SDT>
+        <DIACHI>Nha Trang</DIACHI>
+        <EMAIL>hung@gmail.com</EMAIL>
+        <GIOITINH>0</GIOITINH>
+        <TENDN>hungle</TENDN>
+        <MATKHAU>hung123</MATKHAU>
+    </KHACHANG>
+    <KHACHANG>
+        <MAKH>KH003</MAKH>
+        <TENKH>Lê Ngọc Tân</TENKH>
+        <SDT>0345145813</SDT>
+        <DIACHI>Nha Trang</DIACHI>
+        <EMAIL>tan@gmail.com</EMAIL>
+        <GIOITINH>0</GIOITINH>
+        <TENDN>tan</TENDN>
+        <MATKHAU>tan123</MATKHAU>
+    </KHACHANG>
+    <NHANVIEN>
+        <MANV>NV001</MANV>
+        <TEN>Đoàn Như Phục</TEN>
+        <GIOITINH>0</GIOITINH>
+        <SDT>0347856458</SDT>
+        <NGAYSINH>14/04/2002</NGAYSINH>
+        <TENDN>phucdoan</TENDN>
+        <MATKHAU>phuc123</MATKHAU>
+        <QUYEN>Chỉnh sửa</QUYEN>
+    </NHANVIEN>
+    <NHANVIEN>
+        <MANV>NV002</MANV>
+        <TEN>Đinh Lê Nhật Tiến</TEN>
+        <GIOITINH>0</GIOITINH>
+        <SDT>035846983</SDT>
+        <NGAYSINH>03/01/2002</NGAYSINH>
+        <TENDN>nhattien</TENDN>
+        <MATKHAU>tien123</MATKHAU>
+        <QUYEN>Xem</QUYEN>
+    </NHANVIEN>
+    <NHANVIEN>
+        <MANV>NV003</MANV>
+        <TEN>Bành Thị Bưởi</TEN>
+        <GIOITINH>1</GIOITINH>
+        <SDT>0368789562</SDT>
+        <NGAYSINH>28/02/2002</NGAYSINH>
+        <TENDN>buoixinh</TENDN>
+        <MATKHAU>buoi123</MATKHAU>
+        <QUYEN>Chỉnh sửa</QUYEN>
+    </NHANVIEN>
+    <DATHANG>
+        <MADH>DH001</MADH>
+        <MANV>NV003</MANV>
+        <MAKH>KH001</MAKH>
+        <PTTT>Trả tiền khi nhận</PTTT>
+        <NGAYDAT>12/06/2023</NGAYDAT>
+        <NGAYGIAO>20/06/2023</NGAYGIAO>
+        <SDTNGUOINHAN>0905029337</SDTNGUOINHAN>
+        <DIACHI>Trần Phú, Nha Trang, Khánh Hoà</DIACHI>
+        <TINHTRANG>Đang giao</TINHTRANG>
+    </DATHANG>
+    <DATHANG>
+        <MADH>DH002</MADH>
+        <MANV>NV001</MANV>
+        <MAKH>KH002</MAKH>
+        <PTTT>Qua thẻ</PTTT>
+        <NGAYDAT>22/10/2023</NGAYDAT>
+        <NGAYGIAO>24/10/2023</NGAYGIAO>
+        <SDTNGUOINHAN>0708126244</SDTNGUOINHAN>
+        <DIACHI>Âu Cơ, Nha Trang, Khánh Hoà</DIACHI>
+        <TINHTRANG>Đang giao</TINHTRANG>
+    </DATHANG>
+    <DATHANG>
+        <MADH>DH003</MADH>
+        <MANV>NV001</MANV>
+        <MAKH>KH002</MAKH>
+        <PTTT>Qua thẻ</PTTT>
+        <NGAYDAT>24/06/2023</NGAYDAT>
+        <NGAYGIAO>26/06/2023</NGAYGIAO>
+        <SDTNGUOINHAN>0927412786</SDTNGUOINHAN>
+        <DIACHI>Vĩnh Ngọc, Nha Trang, Khánh Hoà</DIACHI>
+        <TINHTRANG>Hoàn thành</TINHTRANG>
+    </DATHANG>
+    <CTDH>
+        <MADH>DH001</MADH>
+        <MATS>N0002</MATS>
+        <SOLUONG>1</SOLUONG>
+        <GIA>779.690</GIA>
+        <TONGTIEN>779.690</TONGTIEN>
+    </CTDH>
+    <CTDH>
+        <MADH>DH002</MADH>
+        <MATS>VT001</MATS>
+        <SOLUONG>3</SOLUONG>
+        <GIA>300.000</GIA>
+        <TONGTIEN>900.000</TONGTIEN>
+    </CTDH>
+    <CTDH>
+        <MADH>DH003</MADH>
+        <MATS>N0001</MATS>
+        <SOLUONG>2</SOLUONG>
+        <GIA>19.000</GIA>
+        <TONGTIEN>38.000</TONGTIEN>
+    </CTDH>
+</QLBANTS>

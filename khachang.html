@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Danh Sách Khách Hàng</title>
+        <meta charset="UTF-8"></meta>
+        <link rel="stylesheet" type="text/css" href="qlbantrangsuc.css"/>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <img src="https://drive.google.com/uc?export=view&id=105cufvqBUFgo0irRZ8ToSdpr-QzTlY_S" alt="logo"></img>               
+                <li><a href="sanpham.html">SẢN PHẨM</a></li>
+                <li><a href="khachang.html">KHÁCH HÀNG</a></li>
+                <li><a href="nhanvien.html">NHÂN VIÊN</a></li>
+                <li><a href="donhang.html">ĐƠN HÀNG</a></li>
+                <li><a href="hoadon.html">HOÁ ĐƠN</a></li>
+            </ul>
+        </nav>
+        <h2>QUẢN LÍ BÁN TRANG SỨC</h2>
+        <h3>Quản lí khách hàng</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Mã khách hàng</th>
+                    <th>Tên khách hàng</th>
+                    <th>Số điện thoại</th>
+                    <th>Địa chỉ</th>
+                    <th>Email</th>
+                    <th>Giới tính</th>
+                    <th>Tên đăng nhập</th>
+                    <th>Mật khẩu</th>
+                </tr>
+            </thead>
+            <tbody id="khachang-list"></tbody>
+        </table>
+        <form>
+            <button onclick="addCustomer()">Thêm</button>
+            <button onclick="editCustomer()">Chỉnh sửa</button>
+            <button onclick="deleteCustomer()">Xóa</button>
+            <button onclick="saveData()">Lưu</button>
+        </form>
+        <script src="khachang.js"></script>
+        
+    </body>
+</html>

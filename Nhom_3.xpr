@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="19.0">
+    <meta>
+        <filters directoryPatterns="" filePatterns="Nhom_3.xpr" positiveFilePatterns="" showHiddenFiles="false"/>
+        <options/>
+    </meta>
+    <projectTree name="Nhom_3.xpr">
+        <folder path="."/>
+    </projectTree>
+</project>

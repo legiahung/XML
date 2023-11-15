@@ -1,0 +1,53 @@
+Bài tập nhóm
+Tên đề tài: Cửa hàng bán traang sức
+62130690 - Lê Gia Hưng
+62132932 - Nguyễn Thị Mai Anh
+
+- Mô tả mô hình quản lý bán trang sức: Phần tử gốc là quản lý bán trang sức 
+
+Thành phần mô tả trong việc quản lý cửa hàng trang sức với các bảng dữ liệu như sau:
+
+    *SANPHAM(Sản phầm)
+MATS - (Mã trang sức: 5 ký tự) - (vd: N001)
+NCC - (Tên nhà cung cấp) -  (vd: Công Ty TNHH Long Ly)
+LOAITS- (Loại trang sức) -  (vd: Nhẫn)
+TENTS- (Tên trang sức) - (vd: Nhẫn bạc hình vô cực)
+ANH - (Hình ảnh sản phẩm) - (vd: sp1.jpg)
+BAOHANH - (Hạn bảo hành của sản phẩm) - (vd: 1)
+MOTA - (Mô tả chi tiết của sản phẩm ) - (vd: Đắm chìm trong sự độc đáo của BDHC về biểu tượng của sự vô hạn...)
+TINHTRANG - (Tình trạng trong kho còn hàng hay hết hàng) - (vd: Còn hàng)
+GIA - (Giá bán của trang sức) - (vd:  19.000)
+    *KHACHANG(Khách hàng)
+MAKH - ( Mã khách hàng: 5 ký tự) - (vd: KH01)
+TENKH - (Tên khách hàng) - (vd:Nguyễn Thị Mai Anh)
+SDT - ( Số điện thoại khách hàng) - (vd: 0868997369)
+DIACHI - (Địa chỉ khách hàng) - (vd: Quảng Ninh)
+EMAIL - (Email khách hàng) - (vd:anh@gmail.com)
+GIOITINH  (Giới tính khách hàng là nữ hoặc nam ) - (vd:Nữ)
+TENDN - (Tên đăng nhập của khách hàng) - (vd: maianh)
+MATKHAU - (Mật Khẩu của khách hàng) - (vd:anh123)
+    *NHANVIEN (Nhân viên)
+MANV - (Mã nhân viên: 5 ký tự) - (vd:NV01)
+TEN - (Tên nhân viên) - (vd:Đoàn Như Phục)
+GIOITINH - (Giới tính nhân viên là nữ hoặc nam) - (vd: Nam)
+SDT - (Số điện thoại) - (vd: 0347856458)
+NGAYSINH - (Ngày sinh (dd/mm/yyyy)) - (vd: 14-04-2002)
+TENDN - (Tên đăng nhập) - (vd: phucdoan)
+MATKHAU - (Mật khẩu) - (vd: phuc1234)
+QUYEN - (Quyển được chỉnh sửa hoặc chỉ xem) - (vd:Chỉnh sửa)
+    *DATHANG(Đặt hàng)
+MADH - (Mã đặt hàng: 5 ký tự) - (vd:DH01)
+MANV - (Mã nhân viên) - (vd:NV03)
+MAKH - (Mã khách hàng) - (vd:KH01)
+PTTT - (Phương thức thanh toán là thanh toán trực tiếp hoặc thanh toán online) - (vd: Thanh toán trực tiếp)
+NGAYDAT - (NgàY đặt (dd/mm/yyyy)) - (vd: 12-06-2023)
+NGAYGIAO - (Ngày giao (dd/mm/yyyy)) - (vd: 20-06-2023)
+SDT - (Số điện thoại người nhận) - (vd: 0905029337)
+DIACHI - (Địa chỉ người nhận) - (vd:Trần Phú, Nha Trang, Khánh Hoà)
+Trạng thái - (Trạng thái của đơn hàng đang được giao hoặc đã hoàn thành) - (vd: Đang giao)
+    *CTDH(Chí tiết đặt hàng)
+MADH - (Mã đơn hàng: 5 ký tự) - (vd:DH01)
+MATS - (Mã trang sức) - (vd: N002)
+SL - (Số lượng đơĐI HENn hàng) - (vd:2)
+GIA- (Giá tiền đơn hàng) - (vd: 779.690)
+TONGTIEN - (Tổng số tiền mua) - (vd: 779.690)
